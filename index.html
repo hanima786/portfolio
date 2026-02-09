@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haneema Begam | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      animation: slideDown 1s ease;
+    }
+
+    header span {
+      color: #00e5ff;
+    }
+
+    header p {
+      margin-top: 15px;
+      max-width: 700px;
+      font-size: 1.1rem;
+      color: #e0f7fa;
+      animation: slideUp 1.2s ease;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+      animation: fadeIn 1s ease;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+      color: #00e5ff;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      transition: transform 0.4s, box-shadow 0.4s;
+      animation: fadeInUp 1s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    }
+
+    .skills span {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 18px;
+      border-radius: 20px;
+      background: linear-gradient(45deg, #00e5ff, #00bcd4);
+      color: #000;
+      font-weight: 500;
+      transition: transform 0.3s;
+    }
+
+    .skills span:hover {
+      transform: scale(1.15);
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    a.link {
+      color: #00e5ff;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      nav a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+      }
+
+      section {
+        padding: 60px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home">
+    <h1>Hi, I'm <span>Sk. Haneema Begam</span></h1>
+    <p>
+      Information Technology student at GMR Institute of Technology with a strong foundation in data structures,
+      object-oriented programming, and Python. Passionate about full-stack development and real-world projects.
+    </p>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am currently pursuing B.Tech in Information Technology (2023–2027) at GMR Institute of Technology.
+        I have hands-on experience in developing web applications and enjoy learning modern technologies.
+        My goal is to enhance my technical skills and contribute to impactful software solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>Python</span>
+      <span>JavaScript</span>
+      <span>PHP</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Django</span>
+      <span>Flask</span>
+      <span>Basic SQL</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Food Ordering Management System</h3>
+      <p>
+        Developed a full-stack Food Ordering Management System using MERN stack during internship at Brvs Tech LLC.
+        The system automates restaurant order processing and improves efficiency and reliability.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <b>shekhaneemabegam@gmail.com</b></p>
+      <p>Phone: <b>8125271649</b></p>
+      <p>Location: <b>Rajam, Andhra Pradesh</b></p>
+      <p>LinkedIn: <a class="link" href="https://www.linkedin.com/in/hanima-begam-shaik-" target="_blank">View Profile</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Sk. Haneema Begam | Personal Portfolio</p>
+  </footer>
+
+</body>
+</html>
