@@ -28,13 +28,11 @@
       align-items: center;
       text-align: center;
       padding: 20px;
-      animation: fadeIn 1.2s ease-in-out;
     }
 
     header h1 {
       font-size: 3rem;
       font-weight: 700;
-      animation: slideDown 1s ease;
     }
 
     header span {
@@ -46,7 +44,6 @@
       max-width: 700px;
       font-size: 1.1rem;
       color: #e0f7fa;
-      animation: slideUp 1.2s ease;
     }
 
     nav {
@@ -57,7 +54,6 @@
       padding: 10px 0;
       text-align: center;
       z-index: 1000;
-      animation: fadeIn 1s ease;
     }
 
     nav a {
@@ -88,10 +84,9 @@
       background: rgba(255, 255, 255, 0.08);
       padding: 25px;
       border-radius: 12px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       box-shadow: 0 8px 25px rgba(0,0,0,0.3);
       transition: transform 0.4s, box-shadow 0.4s;
-      animation: fadeInUp 1s ease;
     }
 
     .card:hover {
@@ -107,11 +102,22 @@
       background: linear-gradient(45deg, #00e5ff, #00bcd4);
       color: #000;
       font-weight: 500;
-      transition: transform 0.3s;
     }
 
-    .skills span:hover {
-      transform: scale(1.15);
+    .project-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: #00e5ff;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .project-link:hover {
+      background: #00bcd4;
     }
 
     footer {
@@ -127,43 +133,9 @@
       text-decoration: none;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes slideDown {
-      from { transform: translateY(-40px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes slideUp {
-      from { transform: translateY(40px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes fadeInUp {
-      from { transform: translateY(30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-    /* Mobile Responsive */
     @media (max-width: 768px) {
       header h1 {
         font-size: 2.2rem;
-      }
-
-      header p {
-        font-size: 1rem;
-      }
-
-      nav a {
-        margin: 0 8px;
-        font-size: 0.9rem;
-      }
-
-      section {
-        padding: 60px 15px;
       }
     }
   </style>
@@ -182,8 +154,7 @@
   <header id="home">
     <h1>Hi, I'm <span>Sk. Haneema Begam</span></h1>
     <p>
-      Information Technology student at GMR Institute of Technology with a strong foundation in data structures,
-      object-oriented programming, and Python. Passionate about full-stack development and real-world projects.
+      Information Technology student at GMR Institute of Technology with strong foundation in programming and full-stack development.
     </p>
   </header>
 
@@ -192,9 +163,8 @@
     <h2>About Me</h2>
     <div class="card">
       <p>
-        I am currently pursuing B.Tech in Information Technology (2023–2027) at GMR Institute of Technology.
-        I have hands-on experience in developing web applications and enjoy learning modern technologies.
-        My goal is to enhance my technical skills and contribute to impactful software solutions.
+        I am currently pursuing B.Tech in Information Technology (2023–2027).
+        Passionate about web development and building real-world applications.
       </p>
     </div>
   </section>
@@ -210,30 +180,32 @@
       <span>CSS</span>
       <span>Django</span>
       <span>Flask</span>
-      <span>Basic SQL</span>
+      <span>SQL</span>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects">
     <h2>Projects</h2>
+
     <div class="card">
       <h3>Food Ordering Management System</h3>
       <p>
-        Developed a full-stack Food Ordering Management System using MERN stack during internship at Brvs Tech LLC.
-        The system automates restaurant order processing and improves efficiency and reliability.
+        Developed a full-stack Food Ordering Management System using MERN stack during internship.
+        Automates restaurant order processing efficiently.
       </p>
     </div>
-    <div class="project">
-    <h3>Personal Portfolio Website</h3>
-    <p>
-        Designed and developed a fully responsive personal portfolio website 
-        using HTML and CSS. Showcases my skills, projects, and contact information.
-    </p>
-    <a href="https://hanima786.github.io/portfolio/" target="_blank">
+
+    <div class="card">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        Designed and developed a fully responsive personal portfolio website using HTML and CSS.
+        Showcases my skills, projects, and contact information.
+      </p>
+      <a href="https://hanima786.github.io/portfolio/" target="_blank" class="project-link">
         View Project
-    </a>
-</div>
+      </a>
+    </div>
 
   </section>
 
@@ -244,7 +216,11 @@
       <p>Email: <b>shekhaneemabegam@gmail.com</b></p>
       <p>Phone: <b>8125271649</b></p>
       <p>Location: <b>Rajam, Andhra Pradesh</b></p>
-      <p>LinkedIn: <a class="link" href="https://www.linkedin.com/in/hanima-begam-shaik-" target="_blank">View Profile</a></p>
+      <p>LinkedIn:
+        <a class="link" href="https://www.linkedin.com/in/hanima-begam-shaik-" target="_blank">
+          View Profile
+        </a>
+      </p>
     </div>
   </section>
 
@@ -254,4 +230,3 @@
 
 </body>
 </html>
-
